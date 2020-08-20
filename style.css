@@ -1,0 +1,175 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+.main
+{
+    height:100vh;
+    width:100%;
+    background:rgb(126, 203, 248);
+}
+.calculator
+{
+    position: absolute;
+    top:10%;
+    left:35%;
+    height:540px;
+    width:320px;
+    background:rgb(226, 209, 209);
+    border-radius:10px;
+    border:2px solid rgb(32, 11, 87);
+    box-shadow:0 20px 50px black;
+}
+.display
+{
+    height:130px;
+    background:white;
+    margin-bottom:20px;
+    border-radius:10px;
+    border-bottom:2px solid rgb(32, 11, 87);
+}
+.keyboard button
+{
+    width:50px;
+    height:50px;
+    background:rgb(242, 245, 205);
+    margin:12px;
+    border-radius:50%;
+    border:none;
+    font: 700 18px sans-serif;
+}
+button[id=operator]
+{
+    background:blueviolet;
+}
+.history
+{
+    position: relative;
+    float:right;
+    font-size:20px;
+    font-family: sans-serif;
+    color:gray;
+    top:30px;
+    right: 40px;
+}
+.result
+{
+    position: relative;
+    float:right;
+    font-size:40px;
+    font-weight: 500;
+    font-family: sans-serif;
+    color:rgb(23, 7, 116);
+    top:70px;
+    right: 10px;
+    overflow-y: hidden;
+}
+
+@media  only screen and (max-width:480px)
+{
+.calculator
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height:80vh;
+    width:80vw;
+    background:rgb(226, 209, 209);
+    border-radius:10px;
+    border:2px solid rgb(32, 11, 87);
+    box-shadow:0 20px 50px black;
+}
+.keyboard button
+{
+    width:42px;
+    height:42px;
+    margin:2vh;
+    margin-left: 3vh;
+    border-radius:50%;
+    border:none;
+    font: 700 18px sans-serif;
+}
+}
+@media  only screen and (max-width:450px)
+{
+.calculator
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height:80vh;
+    width:80vw;
+    background:rgb(226, 209, 209);
+    border-radius:10px;
+    border:2px solid rgb(32, 11, 87);
+    box-shadow:0 20px 50px black;
+}
+.keyboard button
+{
+    width:40px;
+    height:40px;
+    margin:2vh;
+    margin-left: 3vh;
+    border-radius:50%;
+    border:none;
+    font: 700 18px sans-serif;
+}
+}
+
+@media  only screen and (max-width:390px)
+{
+.calculator
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height:80vh;
+    width:80vw;
+    background:rgb(226, 209, 209);
+    border-radius:10px;
+    border:2px solid rgb(32, 11, 87);
+    box-shadow:0 20px 50px black;
+}
+.keyboard button
+{
+    width:35px;
+    height:35px;
+    margin:2vh;
+    margin-left: 3vh;
+    border-radius:50%;
+    border:none;
+    font: 700 18px sans-serif;
+}
+}
+
+
+@media  only screen and (max-width:364px)
+{
+.calculator
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height:80vh;
+    width:80vw;
+    background:rgb(226, 209, 209);
+    border-radius:10px;
+    border:2px solid rgb(32, 11, 87);
+    box-shadow:0 20px 50px black;
+}
+.keyboard button
+{
+    width:30px;
+    height:30px;
+    margin:2vh;
+    margin-left: 3vh;
+    border-radius:50%;
+    border:none;
+    font: 700 18px sans-serif;
+}
+}
