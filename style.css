@@ -1,20 +1,16 @@
-/* box-shadow: 
-12px 12px 16px 0 rgba(0, 0, 0, 0.25),
--8px -8px 12px 0 rgba(255, 255, 255, 0.3);
-border-radius: 50px;
-
- */
 
 body
 {
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 .main
 {
     height:100vh;
     width:100%;
     background:rgb(87, 86, 86);
+    overflow: hidden;
 }
 .calculator
 {
@@ -37,6 +33,7 @@ body
     margin-bottom:20px;
     font-family: sans-serif;
     margin-right:10px;
+    overflow:hidden;
 }
 .keyboard
 {
@@ -63,7 +60,6 @@ body
 button[id=operator]
 {
     color:rgb(121, 121, 121);
-    margin-right:2vw;
 }
 .history
 {
@@ -87,10 +83,17 @@ button[id=operator]
     right: 10px;
     overflow: hidden;
 }
-
+.keyboard button:focus
+{
+    outline: none;
+}
 
 @media only screen and (max-width:500px)
 {
+    .main
+    {
+        background:rgb(14, 14, 14) ;
+    }
     .calculator
     {
         height:100vh;
@@ -110,7 +113,13 @@ button[id=operator]
     .keyboard
     {
         margin-left:4vw;
+        
     }
+    button[id=operator]
+{
+    color:rgb(121, 121, 121);
+    margin-right:2vw;
+}
 }
 
 @media only screen and (max-width:450px)
